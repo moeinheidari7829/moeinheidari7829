@@ -13,17 +13,17 @@
 
 ### Hi there 👋, My name is Moein Heidari, a deep learning developer and researcher! Feel free to contact me if you have an open position in your team 😄. Always eager to discuss with people on research and development topics. moeinheidari7829@gmail.com
 
-<!-- <a href="https://twitter.com/MoeinHeidari2">
+<!-- <a href="https://twitter.com/MoeinHeidarii">
   <img align="left" alt="Moein Heidari | Twitter" width="22px" src="https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/twitter.svg" />
 </a> -->
-<a href="https://www.linkedin.com/in/reza-azad-37a652109/">
+<a href="https://www.linkedin.com/in/moein-heidari/">
   <img align="left" alt="Moein's LinkedIn" width="22px" src="https://raw.githubusercontent.com/peterthehan/peterthehan/master/assets/linkedin.svg" />
 </a>
 
 
 ## SUMMARY
 ------------
-Motivated computer engineer with 9+ years of experience in research, development, and design. Publication record in ICCV, ECCV, WACV, MICCAI, MIDL and IEEE Transaction. Aiming to apply strong knowledge and skills in **deep learning**, **computer vision**, **data structures/algorithms design** and **programming** in real-world industrial problems including, but not limited to, **image/video processing**, **medical image processing**, **data analysis**, and **high-performance computing**.
+Motivated computer engineer with 5+ years of experience in research, development, and design. Publication record in WACV, MICCAI, BMVC and IEEE Transaction. Aiming to apply strong knowledge and skills in **deep learning**, **computer vision**, **data structures/algorithms design** and **programming** in real-world industrial problems including, but not limited to, **image/video processing**, **medical image processing**, **data analysis**, and **high-performance computing**.
 
 ## EXPERIENCE [SELECTED]
 --------------------------
