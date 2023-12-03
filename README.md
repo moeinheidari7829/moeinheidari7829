@@ -3,7 +3,8 @@
 ### Hi there 👋, My name is Moein Heidari, a deep learning developer and researcher! Feel free to contact me if you have an open position in your team 😄. Always eager to discuss with people on research and development topics. moeinheidari7829@gmail.com
 
 <!-- <a href="https://twitter.com/MoeinHeidarii">
-  <img align="left" alt="Moein Heidari | Twitter" width="80px" src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />
+  <img align="left" alt="Moein Heidari | Twitter" width="80px" src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white
+" />
 </a> -->
 <a href="https://www.linkedin.com/in/moein-heidari/">
   <img align="left" alt="Moein's LinkedIn" width="80px" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
