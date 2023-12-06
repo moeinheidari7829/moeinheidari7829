@@ -28,9 +28,10 @@ Motivated computer engineer with 5+ years of experience in research, development
 ### Research Collaboration with
 -------
 • Ehsan Adeli, Stanford University, USA (Chair of CVPR, ICCV, ECCV, Nips, MICCAI, etc.) since 2022.
-• Dorit Merhof, RWTH, Germany (German research chair on Medical Image Analysis) since 2020.
-• Julien Cohen-Adad, MILA, Canada (Canadian research chair on MRI.) since 2020.
-• Sergio Escalera, University of Barcelona, Spain (Chair of CVPR, ICCV, ECCV, Nips, ICML, ICLR etc.) since 2017.
+• Dorit Merhof, RWTH, Germany (German research chair on Medical Image Analysis) since 2022.
+• Julien Cohen-Adad, MILA, Canada (Canadian research chair on MRI.) since 2022.
+• Hisham Cholakkal, MBZUAI, UAE (Mohamed bin Zayed University of Artificial Intelligence.) since 2023.
+• Ilker Hacihaliloglu, UBC, Canada (Department of Radiology, Department of Medicine.) since 2023.
 
 ### SKILLS
 -------
@@ -40,9 +41,8 @@ Motivated computer engineer with 5+ years of experience in research, development
  Object-Oriented/Functional Programming
  Parallel Computing, Image Processing, DeepNeural Networks
 
-### Google scholar page:
+### Google Scholar page:
 -------------
-https://scholar.google.com/citations?hl=en&user=Qb5ildMAAAAJ&view_op=list_works&sortby=pubdate
+https://scholar.google.com/citations?user=mir8D5UAAAAJ&hl=en
 
-Achievements:
-2nd rank in the grand challenge (Segpc2021) among 700+ participants.
+
