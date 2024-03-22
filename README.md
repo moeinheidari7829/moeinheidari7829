@@ -9,21 +9,16 @@ Motivated computer engineer with 5+ years of experience in research, development
 
 ## EXPERIENCE [SELECTED]
 --------------------------
-• Research internship, MILA Lab, Montreal, Canada (2020-2021)
+• Remote Research Assistant, RWTH Aachen University, Germany (2021-Present)
  - Deep learning method for medical image analysis, research results are published in: 
- (MICCAI 2021, MICCAI 2022 submitted)
- - Developer and researcher in an open-source ivadomed library Link: https://ivadomed.org/ 
- - Develop a **convolutional neural network**-based model of missing modality compensation problems: 
- (submitted to Medical image analysis 2022)
+ (MICCAI, WACV, IEEE Access)
 
-• Research internship, ETS University, Montreal, Canada (2019-2020)
- - Deep learning method for few-shot learning, research results are published in: 
- (WACV 2021)
+• Mohamed bin Zayed University of Artificial Intelligence (MBZUAI), UAE (2023-2024)
+ - Scale-aware Attention Network for Microscopic Image Segmentation, research results are published in: (BMVC 2023)
 
-• Sharif University of Technology (#1 in Iran), 2013–2018
- - Develop a model for human action recognition in a video stream. 
- (published in IEEE Transaction)
- - Develop a dynamic time-space conflict detection and quantification 
+• Iran University of Science & Technology (IUST) (#3 in Iran), 2017–2023
+ - Worked on a fully transformer-based end-to-end communication system with a transformer-GAN as an unknown channel. 
+ (Prepared for submission in IEEE Transaction)
 
 ### Research Collaboration with
 -------
