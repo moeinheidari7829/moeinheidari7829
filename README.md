@@ -28,7 +28,6 @@ Motivated computer engineer with **5+ years of experience** in research, develop
 
 • **Research Assistant**, Iran University of Science & Technology (IUST) (#3 in Iran), 2017–2022
   - Worked on transformer-based end-to-end communication systems
-  - Multiple publications in top-tier conferences
 
 ---
 
@@ -59,7 +58,6 @@ Motivated computer engineer with **5+ years of experience** in research, develop
 
 - 🎓 **PhD Student** at University of British Columbia
 - 📝 **20+ Publications** in top-tier venues
-- 🏆 **Outstanding Reviewer** at BMVC 2023
 - 🤝 **International Collaborations** with Stanford, RWTH, MILA, MBZUAI
 - 🔬 **Research Focus**: Computer Vision, Medical Imaging, AI Agents, Deep Learning
 - 💻 **Technical Skills**: Python, CUDA, Deep Learning, Computer Vision
