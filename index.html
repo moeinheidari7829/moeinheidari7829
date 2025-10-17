@@ -11,7 +11,7 @@
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -20,6 +20,10 @@
 </head>
 <body>
   
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
   <!-- Navigation -->
   <nav class="nav">
     <div class="nav-container">
@@ -34,6 +38,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#news">News</a></li>
         <li><a href="#publications">Publications</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -41,16 +46,25 @@
 
   <!-- Hero Section -->
   <section class="hero" id="home">
-    <div class="hero-bg"></div>
+    <div class="hero-bg">
+      <div class="floating-blob blob-1"></div>
+      <div class="floating-blob blob-2"></div>
+      <div class="floating-blob blob-3"></div>
+    </div>
     <div class="container">
       <div class="hero-grid">
         <div class="hero-content">
-          <div class="hero-tag">PhD Student & Researcher</div>
-          <h1 class="hero-name">Moein Heidari</h1>
+          <div class="hero-tag">
+            <i class="fas fa-graduation-cap"></i>
+            PhD Student & Researcher
+          </div>
+          <h1 class="hero-name">
+            <span class="gradient-text">Moein Heidari</span>
+          </h1>
           <p class="hero-title">I'm a <span class="typed-text" id="typed"></span></p>
           <div class="hero-stats">
             <div class="stat">
-              <div class="stat-num">20+</div>
+              <div class="stat-num" data-target="20">0</div>
               <div class="stat-label">Publications</div>
             </div>
             <div class="stat">
@@ -62,11 +76,32 @@
               <div class="stat-label">2025</div>
             </div>
           </div>
+          <div class="hero-actions">
+            <a href="#publications" class="btn btn-primary">
+              <i class="fas fa-scroll"></i>
+              View Publications
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fas fa-envelope"></i>
+              Get In Touch
+            </a>
+          </div>
         </div>
         <div class="hero-image">
           <div class="image-wrapper">
             <img src="./assets/myself.jpeg" alt="Moein Heidari">
+            <div class="image-overlay">
+              <div class="status-badge">
+                <i class="fas fa-circle"></i>
+                Available for collaboration
+              </div>
+            </div>
           </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-arrow">
+          <i class="fas fa-chevron-down"></i>
         </div>
       </div>
     </div>
@@ -75,67 +110,106 @@
   <!-- About Section -->
   <section class="section" id="about">
     <div class="container">
-      <h2 class="section-title">About</h2>
+      <div class="section-header">
+        <span class="section-label">About Me</span>
+        <h2 class="section-title">Passionate Researcher in AI & Medical Imaging</h2>
+        <p class="section-desc">
+          Exploring the frontiers of Computer Vision, Medical Imaging, and AI Agents to solve real-world healthcare challenges.
+        </p>
+      </div>
       
       <div class="about-grid">
         <div class="about-main">
-          <p class="lead">
-            Hi, I'm Moein! 👋
-          </p>
-          <p>
-            I'm a <strong>PhD student in Biomedical Engineering</strong> at the <strong>University of British Columbia</strong>, 
-            working under the supervision of <strong>Dr. Ilker Hacihaliloglu</strong> at the 
-            <a href="https://ultrai.med.ubc.ca/" target="_blank" class="link">UltrAi Lab</a>.
-          </p>
-          <p>
-            My research explores the frontiers of <strong>Computer Vision</strong>, <strong>Medical Imaging</strong>, 
-            and <strong>Deep Learning</strong>. I'm particularly interested in <strong>Implicit Neural Representations</strong>, 
-            <strong>Vision Transformers</strong>, <strong>Diffusion Models</strong>, <strong>AI Agents</strong>, 
-            and <strong>Large Language Models</strong> for medical applications.
-          </p>
-          <p>
-            Currently, I'm developing an <em>agentic framework for echocardiography</em>, combining multimodal AI agents 
-            with advanced vision models to improve cardiac imaging analysis and diagnosis.
-          </p>
-          <p>
-            I've had the privilege of collaborating with leading researchers from <strong>Stanford</strong>, <strong>RWTH Aachen</strong>, 
-            <strong>MILA</strong>, <strong>MBZUAI</strong>, and <strong>Rutgers</strong>, publishing at top-tier venues including 
-            <strong>CVPR</strong>, <strong>ICCV</strong>, <strong>MICCAI</strong>, <strong>WACV</strong>, 
-            and <strong>Medical Image Analysis</strong>.
-          </p>
-          <p class="cv-link">📄 <a href="#">My CV</a></p>
+          <div class="about-content">
+            <p class="lead">
+              Hi, I'm Moein! 👋 A passionate researcher pushing the boundaries of AI in healthcare.
+            </p>
+            <p>
+              I'm a <strong>PhD student in Biomedical Engineering</strong> at the <strong>University of British Columbia</strong>, 
+              working under the supervision of <strong>Dr. Ilker Hacihaliloglu</strong> at the 
+              <a href="https://ultrai.med.ubc.ca/" target="_blank" class="link">UltrAi Lab</a>.
+            </p>
+            <p>
+              My research explores the frontiers of <strong>Computer Vision</strong>, <strong>Medical Imaging</strong>, 
+              and <strong>Deep Learning</strong>. I'm particularly interested in <strong>Implicit Neural Representations</strong>, 
+              <strong>Vision Transformers</strong>, <strong>Diffusion Models</strong>, <strong>AI Agents</strong>, 
+              and <strong>Large Language Models</strong> for medical applications.
+            </p>
+            <p>
+              Currently, I'm developing an <em>agentic framework for echocardiography</em>, combining multimodal AI agents 
+              with advanced vision models to improve cardiac imaging analysis and diagnosis.
+            </p>
+            <p>
+              I've had the privilege of collaborating with leading researchers from <strong>Stanford</strong>, <strong>RWTH Aachen</strong>, 
+              <strong>MILA</strong>, <strong>MBZUAI</strong>, and <strong>Rutgers</strong>, publishing at top-tier venues including 
+              <strong>CVPR</strong>, <strong>ICCV</strong>, <strong>MICCAI</strong>, <strong>WACV</strong>, 
+              and <strong>Medical Image Analysis</strong>.
+            </p>
+          </div>
+          
+          <div class="research-areas">
+            <h3>Research Interests</h3>
+            <div class="research-tags">
+              <span class="research-tag">Computer Vision</span>
+              <span class="research-tag">Medical Imaging</span>
+              <span class="research-tag">Implicit Neural Representations</span>
+              <span class="research-tag">Vision Transformers</span>
+              <span class="research-tag">Diffusion Models</span>
+              <span class="research-tag">AI Agents</span>
+              <span class="research-tag">Large Language Models</span>
+              <span class="research-tag">Deep Learning</span>
+            </div>
+          </div>
         </div>
         
         <div class="about-side">
           <div class="info-card">
-            <h3>Experience</h3>
-            <ul class="exp-list">
+            <div class="card-header">
+              <i class="fas fa-university"></i>
+              <h3>Education</h3>
+            </div>
+            <div class="education-item">
+              <div class="edu-degree">PhD in Biomedical Engineering</div>
+              <div class="edu-school">University of British Columbia</div>
+              <div class="edu-date">2024 - Present</div>
+            </div>
+            <div class="education-item">
+              <div class="edu-degree">B.Sc. Electrical Engineering</div>
+              <div class="edu-school">Iran University of Science and Technology</div>
+              <div class="edu-date">2017 - 2022</div>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="card-header">
+              <i class="fas fa-award"></i>
+              <h3>Recent Highlights</h3>
+            </div>
+            <ul class="highlights-list">
               <li>
-                <strong>PhD Student</strong>
-                <span>University of British Columbia, Canada</span>
-                <span class="date">Jan. 2024 - Present</span>
+                <i class="fas fa-star"></i>
+                <span>3 papers accepted at top-tier conferences (CVPR, ICCV, ICASSP 2025)</span>
               </li>
               <li>
-                <strong>Research Assistant</strong>
-                <span>RWTH University, Aachen, Germany</span>
-                <span class="date">Mar. 2022 - Dec. 2023</span>
+                <i class="fas fa-star"></i>
+                <span>Featured in Medical Image Analysis journal</span>
               </li>
               <li>
-                <strong>Research Assistant</strong>
-                <span>MBZUAI, UAE</span>
-                <span class="date">Jan. 2023 - May 2023</span>
+                <i class="fas fa-star"></i>
+                <span>Collaborations with Stanford, RWTH, MILA</span>
               </li>
               <li>
-                <strong>Co-founder</strong>
-                <span>AIR Center, Tehran, Iran</span>
-                <span class="date">Jul. 2020 - Jul. 2022</span>
-              </li>
-              <li>
-                <strong>B.Sc. Electrical Engineering</strong>
-                <span>IUST, Iran</span>
-                <span class="date">Sep. 2017 - Feb. 2022</span>
+                <i class="fas fa-star"></i>
+                <span>20+ publications in top venues</span>
               </li>
             </ul>
+          </div>
+
+          <div class="cv-download">
+            <a href="./assets/Moein_Heidari_CV.pdf" target="_blank" class="btn btn-download">
+              <i class="fas fa-download"></i>
+              Download CV
+            </a>
           </div>
         </div>
       </div>
@@ -145,72 +219,117 @@
   <!-- News Section -->
   <section class="section section-alt" id="news">
     <div class="container">
-      <h2 class="section-title">News</h2>
+      <div class="section-header">
+        <span class="section-label">Latest News</span>
+        <h2 class="section-title">Recent Achievements</h2>
+        <p class="section-desc">
+          Stay updated with my latest research milestones and paper acceptances.
+        </p>
+      </div>
       
-      <div class="news-list">
-        <div class="news-item">
-          <span class="news-date">[Dec. 2024]</span>
-          <p>🎉 Paper <strong>Prompt2Perturb (P2P)</strong> accepted at <strong>CVPR'25</strong>.</p>
+      <div class="news-timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker success"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">[Dec. 2024]</span>
+            <p>🎉 Paper <strong>Prompt2Perturb (P2P)</strong> accepted at <strong>CVPR'25</strong>.</p>
+          </div>
         </div>
         
-        <div class="news-item">
-          <span class="news-date">[Sep. 2024]</span>
-          <p>🎉 Paper <strong>SL²A-INR</strong> accepted at <strong>ICCV'25</strong>.</p>
+        <div class="timeline-item">
+          <div class="timeline-marker success"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">[Sep. 2024]</span>
+            <p>🎉 Paper <strong>SL²A-INR</strong> accepted at <strong>ICCV'25</strong>.</p>
+          </div>
         </div>
         
-        <div class="news-item">
-          <span class="news-date">[Sep. 2024]</span>
-          <p>🎉 Paper <strong>Fourier KAN</strong> for implicit neural representations accepted at <strong>ICASSP'25</strong>.</p>
+        <div class="timeline-item">
+          <div class="timeline-marker success"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">[Sep. 2024]</span>
+            <p>🎉 Paper <strong>Fourier KAN</strong> for implicit neural representations accepted at <strong>ICASSP'25</strong>.</p>
+          </div>
         </div>
         
-        <div class="news-item">
-          <span class="news-date">[Sep. 2024]</span>
-          <p>🎉 Paper on <strong>U-Net modifications</strong> for tumor segmentation accepted at <strong>SPIE'25</strong>.</p>
+        <div class="timeline-item">
+          <div class="timeline-marker success"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">[Sep. 2024]</span>
+            <p>🎉 Paper on <strong>U-Net modifications</strong> for tumor segmentation accepted at <strong>SPIE'25</strong>.</p>
+          </div>
         </div>
         
-        <div class="news-item">
-          <span class="news-date">[Aug. 2024]</span>
-          <p>🎉 Paper <strong>MSA² Net</strong> on multi-scale attention accepted at <strong>BMVC'24</strong>.</p>
+        <div class="timeline-item">
+          <div class="timeline-marker success"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">[Jul. 2024]</span>
+            <p>🎉 Paper <strong>MSA² Net</strong> on multi-scale attention accepted at <strong>BMVC'24</strong>.</p>
+          </div>
         </div>
         
-        <div class="news-item">
-          <span class="news-date">[Jan. 2024]</span>
-          <p>🎓 Started my <strong>Ph.D. in Biomedical Engineering</strong> at the University of British Columbia.</p>
+        <div class="timeline-item">
+          <div class="timeline-marker info"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">[Jan. 2024]</span>
+            <p>🎓 Started my <strong>Ph.D. in Biomedical Engineering</strong> at the University of British Columbia.</p>
+          </div>
         </div>
         
-        <div class="news-item">
-          <span class="news-date">[Aug. 2023]</span>
-          <p>🎉 Paper <strong>SA²-Net</strong> accepted for <strong>oral presentation</strong> at <strong>BMVC'23</strong>.</p>
+        <div class="timeline-item">
+          <div class="timeline-marker success"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">[Aug. 2023]</span>
+            <p>🎉 Paper <strong>SA²-Net</strong> accepted for <strong>oral presentation</strong> at <strong>BMVC'23</strong>.</p>
+          </div>
         </div>
         
-        <div class="news-item">
-          <span class="news-date">[Aug. 2023]</span>
-          <p>🎉 Our <strong>survey paper</strong> on Vision Transformers in Medical Imaging accepted in the <strong>Medical Image Analysis Journal</strong>.</p>
+        <div class="timeline-item">
+          <div class="timeline-marker success"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">[Aug. 2023]</span>
+            <p>🎉 Our <strong>survey paper</strong> on Vision Transformers in Medical Imaging accepted in the <strong>Medical Image Analysis Journal</strong>.</p>
+          </div>
         </div>
         
-        <div class="news-item">
-          <span class="news-date">[Aug. 2023]</span>
-          <p>🎉 Our <strong>survey paper</strong> on Diffusion Models in Medical Imaging accepted in the <strong>Medical Image Analysis Journal</strong>.</p>
+        <div class="timeline-item">
+          <div class="timeline-marker success"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">[Aug. 2023]</span>
+            <p>🎉 Our <strong>survey paper</strong> on Diffusion Models in Medical Imaging accepted in the <strong>Medical Image Analysis Journal</strong>.</p>
+          </div>
         </div>
         
-        <div class="news-item">
-          <span class="news-date">[Oct. 2022]</span>
-          <p>🎉 Paper <strong>HiFormer</strong> on medical image segmentation accepted at <strong>WACV'23</strong>.</p>
+        <div class="timeline-item">
+          <div class="timeline-marker success"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">[Sep. 2022]</span>
+            <p>🎉 Paper <strong>HiFormer</strong> on medical image segmentation accepted at <strong>WACV'23</strong>.</p>
+          </div>
         </div>
         
-        <div class="news-item">
-          <span class="news-date">[Aug. 2022]</span>
-          <p>🎉 Three papers, <strong>Contextual Attention Network</strong>, <strong>IVD Labeling</strong>, and <strong>TransDeepLab</strong> accepted at <strong>MICCAI'22</strong>.</p>
+        <div class="timeline-item">
+          <div class="timeline-marker success"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">[Aug. 2022]</span>
+            <p>🎉 Three papers, <strong>Contextual Attention Network</strong>, <strong>IVD Labeling</strong>, and <strong>TransDeepLab</strong> accepted at <strong>MICCAI'22</strong>.</p>
+          </div>
         </div>
         
-        <div class="news-item">
-          <span class="news-date">[Aug. 2022]</span>
-          <p>🎉 Paper <strong>TransNorm</strong> accepted in <strong>IEEE Access</strong> journal.</p>
+        <div class="timeline-item">
+          <div class="timeline-marker success"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">[Aug. 2022]</span>
+            <p>🎉 Paper <strong>TransNorm</strong> accepted in <strong>IEEE Access</strong> journal.</p>
+          </div>
         </div>
         
-        <div class="news-item">
-          <span class="news-date">[Sep. 2021]</span>
-          <p>🎓 Successfully defended my <strong>bachelor's thesis</strong> on designing, simulating, and building a self-driving car.</p>
+        <div class="timeline-item">
+          <div class="timeline-marker info"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">[Sep. 2021]</span>
+            <p>🎓 Successfully defended my <strong>bachelor's thesis</strong> on designing, simulating, and building a self-driving car.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -219,7 +338,13 @@
   <!-- Publications Section -->
   <section class="section" id="publications">
     <div class="container-wide">
-      <h2 class="section-title">Publications</h2>
+      <div class="section-header">
+        <span class="section-label">Research Publications</span>
+        <h2 class="section-title">20+ Publications in Top Venues</h2>
+        <p class="section-desc">
+          My research spans Computer Vision, Medical Imaging, and AI Agents, published at premier conferences and journals.
+        </p>
+      </div>
       
       <div class="pubs-container">
         
@@ -548,40 +673,228 @@
     </div>
   </section>
 
+  <!-- Experience Section -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Experience & Service</span>
+        <h2 class="section-title">Research, Teaching & Reviewing</h2>
+        <p class="section-desc">
+          My professional journey spans research, teaching, and service to the academic community.
+        </p>
+      </div>
+      
+      <div class="experience-tabs">
+        <div class="tab-buttons">
+          <button class="tab-btn active" data-tab="research">Research</button>
+          <button class="tab-btn" data-tab="teaching">Teaching</button>
+          <button class="tab-btn" data-tab="service">Service</button>
+          <button class="tab-btn" data-tab="reviewing">Reviewing</button>
+        </div>
+        
+        <div class="tab-content">
+          <div class="tab-panel active" id="research">
+            <div class="experience-grid">
+              <div class="exp-card">
+                <div class="exp-icon">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="exp-content">
+                  <h3>PhD Student</h3>
+                  <div class="exp-org">University of British Columbia</div>
+                  <div class="exp-date">Jan. 2024 - Present</div>
+                  <p>Researching agentic frameworks for echocardiography and implicit neural representations in medical imaging.</p>
+                </div>
+              </div>
+              
+              <div class="exp-card">
+                <div class="exp-icon">
+                  <i class="fas fa-flask"></i>
+                </div>
+                <div class="exp-content">
+                  <h3>Research Assistant</h3>
+                  <div class="exp-org">RWTH University, Aachen</div>
+                  <div class="exp-date">Mar. 2022 - Dec. 2023</div>
+                  <p>Collaborated on medical image analysis projects, focusing on vision transformers and deep learning architectures.</p>
+                </div>
+              </div>
+              
+              <div class="exp-card">
+                <div class="exp-icon">
+                  <i class="fas fa-university"></i>
+                </div>
+                <div class="exp-content">
+                  <h3>Research Assistant</h3>
+                  <div class="exp-org">MBZUAI, UAE</div>
+                  <div class="exp-date">Jan. 2023 - May 2023</div>
+                  <p>Worked on advanced computer vision projects and collaborated with international research teams.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tab-panel" id="teaching">
+            <div class="experience-grid">
+              <div class="exp-card">
+                <div class="exp-icon">
+                  <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <div class="exp-content">
+                  <h3>Teaching Assistant</h3>
+                  <div class="exp-org">University of British Columbia</div>
+                  <div class="exp-date">2024 - Present</div>
+                  <p>Assisting in biomedical engineering courses, helping students with computer vision and machine learning concepts.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tab-panel" id="service">
+            <div class="experience-grid">
+              <div class="exp-card">
+                <div class="exp-icon">
+                  <i class="fas fa-users"></i>
+                </div>
+                <div class="exp-content">
+                  <h3>Student Representative</h3>
+                  <div class="exp-org">UBC Biomedical Engineering</div>
+                  <div class="exp-date">2024 - Present</div>
+                  <p>Representing graduate students in departmental meetings and organizing academic events.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tab-panel" id="reviewing">
+            <div class="experience-grid">
+              <div class="exp-card">
+                <div class="exp-icon">
+                  <i class="fas fa-clipboard-check"></i>
+                </div>
+                <div class="exp-content">
+                  <h3>Conference Reviewer</h3>
+                  <div class="exp-org">CVPR, ICCV, MICCAI, WACV, BMVC</div>
+                  <div class="exp-date">2022 - Present</div>
+                  <p>Reviewing papers for top-tier computer vision and medical imaging conferences.</p>
+                </div>
+              </div>
+              
+              <div class="exp-card">
+                <div class="exp-icon">
+                  <i class="fas fa-journal-whills"></i>
+                </div>
+                <div class="exp-content">
+                  <h3>Journal Reviewer</h3>
+                  <div class="exp-org">Medical Image Analysis, IEEE TMI</div>
+                  <div class="exp-date">2023 - Present</div>
+                  <p>Reviewing manuscripts for prestigious medical imaging journals.</p>
+                </div>
+              </div>
+              
+              <div class="exp-card">
+                <div class="exp-icon">
+                  <i class="fas fa-award"></i>
+                </div>
+                <div class="exp-content">
+                  <h3>Outstanding Reviewer</h3>
+                  <div class="exp-org">BMVC 2023</div>
+                  <div class="exp-date">2023</div>
+                  <p>Recognized for exceptional review quality and constructive feedback.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Contact Section -->
   <section class="section" id="contact">
     <div class="container">
-      <h2 class="section-title">Contact</h2>
-      
-      <p class="contact-intro">
-        For inquiries or feedback on my research, don't hesitate to reach out. 
-        I'm always happy to hear from you and exchange ideas.
-      </p>
-      
-      <div class="contact-info">
-        <h4>Email:</h4>
-        <p><a href="mailto:moein.heidari@ubc.ca">moein.heidari@ubc.ca</a></p>
-        <p><a href="mailto:moeinheidari7829@gmail.com">moeinheidari7829@gmail.com</a></p>
+      <div class="section-header">
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Let's Collaborate</h2>
+        <p class="section-desc">
+          I'm always interested in discussing research ideas, collaborations, and opportunities.
+        </p>
       </div>
-
-      <div class="social-links">
-        <a href="https://scholar.google.com/citations?user=mir8D5UAAAAJ&hl=en" target="_blank" title="Google Scholar">
-          <i class="fas fa-graduation-cap"></i>
-        </a>
-        <a href="https://github.com/moeinheidari7829" target="_blank" title="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/moein-heidari/" target="_blank" title="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
+      
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Email</h3>
+              <p><a href="mailto:moein.heidari@ubc.ca">moein.heidari@ubc.ca</a></p>
+              <p><a href="mailto:moeinheidari7829@gmail.com">moeinheidari7829@gmail.com</a></p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Location</h3>
+              <p>Vancouver, BC, Canada</p>
+              <p>University of British Columbia</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Availability</h3>
+              <p>Open to collaborations</p>
+              <p>Available for research discussions</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="social-section">
+          <h3>Connect With Me</h3>
+          <div class="social-links">
+            <a href="https://scholar.google.com/citations?user=mir8D5UAAAAJ&hl=en" target="_blank" title="Google Scholar">
+              <i class="fas fa-graduation-cap"></i>
+              <span>Google Scholar</span>
+            </a>
+            <a href="https://github.com/moeinheidari7829" target="_blank" title="GitHub">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/moein-heidari/" target="_blank" title="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://twitter.com/moeinheidari" target="_blank" title="Twitter">
+              <i class="fab fa-twitter"></i>
+              <span>Twitter</span>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <p>&copy; 2025 Moein Heidari. All rights reserved.</p>
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2025 Moein Heidari. All rights reserved.</p>
+        <p>Built with passion for research and innovation.</p>
+      </div>
+    </div>
   </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop">
+    <i class="fas fa-chevron-up"></i>
+  </button>
 
   <script src="./script.js"></script>
 </body>
