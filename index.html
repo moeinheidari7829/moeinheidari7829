@@ -3,417 +3,832 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Moein Heidari - PhD Student & Researcher in Computer Vision and Medical Imaging at UBC">
-  <meta name="keywords" content="Moein Heidari, Computer Vision, Medical Imaging, Deep Learning, Machine Learning, UBC, Implicit Neural Representations">
+  <meta name="description" content="Moein Heidari - PhD Student at UBC researching Computer Vision, Medical Imaging, and Implicit Neural Representations">
+  <meta name="keywords" content="Moein Heidari, Computer Vision, Medical Imaging, Deep Learning, UBC, Transformers, Implicit Neural Representations">
   <meta name="author" content="Moein Heidari">
-  <title>Moein Heidari | Computer Vision Researcher</title>
+  <title>Moein Heidari - Computer Vision Researcher</title>
   
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
   <!-- Styles -->
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+  
   <!-- Navigation -->
-  <nav class="navbar">
-    <div class="container">
-      <a href="#home" class="logo">Moein Heidari</a>
-      <button class="nav-toggle" aria-label="Toggle navigation">
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">MH</a>
+      <button class="nav-toggle" aria-label="Toggle menu">
         <span></span>
         <span></span>
         <span></span>
       </button>
       <ul class="nav-menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#publications" class="nav-link">Publications</a></li>
+        <li><a href="#news" class="nav-link">News</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </div>
   </nav>
 
   <!-- Hero Section -->
   <section class="hero" id="home">
-    <div class="container">
+    <div class="hero-background"></div>
+    <div class="container hero-container">
       <div class="hero-content">
-        <div class="hero-text">
-          <span class="hero-tag">Computer Vision Researcher</span>
-          <h1>Moein Heidari</h1>
-          <p class="hero-subtitle">PhD Student at University of British Columbia</p>
-          <p class="hero-description">
-            Passionate researcher exploring the frontiers of <strong>Computer Vision</strong>, <strong>Medical Imaging</strong>, 
-            and <strong>Deep Learning</strong>. Currently working on implicit neural representations, transformers, and 
-            generative models at UBC's UltrAi Lab.
-          </p>
-          <div class="hero-links">
-            <a href="https://scholar.google.com/citations?user=mir8D5UAAAAJ&hl=en" target="_blank" class="btn btn-primary">
-              <span>📚</span> Google Scholar
-            </a>
-            <a href="https://github.com/moeinheidari7829" target="_blank" class="btn btn-outline">
-              <span>💻</span> GitHub
-            </a>
-            <a href="#contact" class="btn btn-outline">
-              <span>📧</span> Contact
-            </a>
+        <div class="hero-greeting">Hello, I'm</div>
+        <h1 class="hero-title">Moein Heidari</h1>
+        <div class="hero-roles">
+          <span class="role-text">PhD Student</span>
+          <span class="role-divider">|</span>
+          <span class="role-text">Computer Vision Researcher</span>
+          <span class="role-divider">|</span>
+          <span class="role-text">Deep Learning Engineer</span>
+        </div>
+        <p class="hero-description">
+          Passionate about pushing the boundaries of <strong>Artificial Intelligence</strong> through innovative research in 
+          <strong>Computer Vision</strong>, <strong>Medical Imaging</strong>, and <strong>Implicit Neural Representations</strong>.
+        </p>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number">15+</div>
+            <div class="stat-label">Publications</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">CVPR</div>
+            <div class="stat-label">2025</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">ICCV</div>
+            <div class="stat-label">2025</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">MedIA</div>
+            <div class="stat-label">Journal</div>
           </div>
         </div>
+        <div class="hero-actions">
+          <a href="mailto:moein.heidari@ubc.ca" class="btn btn-primary">
+            <i class="fas fa-envelope"></i> Get in Touch
+          </a>
+          <a href="https://scholar.google.com/citations?user=mir8D5UAAAAJ&hl=en" target="_blank" class="btn btn-secondary">
+            <i class="fas fa-graduation-cap"></i> Google Scholar
+          </a>
+          <a href="https://github.com/moeinheidari7829" target="_blank" class="btn btn-secondary">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
       </div>
+    </div>
+    <div class="scroll-indicator">
+      <i class="fas fa-chevron-down"></i>
     </div>
   </section>
 
   <!-- About Section -->
-  <section class="section" id="about">
+  <section class="section about-section" id="about">
     <div class="container">
-      <h2 class="section-title">About Me</h2>
+      <div class="section-header">
+        <span class="section-tag">Get to Know Me</span>
+        <h2 class="section-title">About</h2>
+      </div>
+      
       <div class="about-grid">
-        <div class="about-text">
-          <p>
-            Hi, I'm Moein! 👋 I'm a PhD student at the <strong>University of British Columbia</strong>, 
-            working in the <a href="https://ultrai.med.ubc.ca/" target="_blank">UltrAi Lab</a> under the supervision of 
-            <strong>Dr. Ilker Hacihaliloglu</strong>.
+        <div class="about-main">
+          <p class="lead-text">
+            Hi! 👋 I'm a PhD student at the <strong>University of British Columbia</strong>, working at the intersection of 
+            computer vision, medical imaging, and deep learning.
           </p>
           <p>
-            I'm passionate about developing innovative deep learning solutions that push the boundaries of what's possible 
-            in computer vision and medical imaging. My research focuses on <strong>Implicit Neural Representations</strong>, 
-            <strong>Vision Transformers</strong>, <strong>Generative Models</strong>, and their applications in medical image analysis.
+            My research focuses on developing innovative AI solutions for real-world challenges, particularly in medical imaging. 
+            I'm passionate about <strong>Implicit Neural Representations</strong>, <strong>Vision Transformers</strong>, 
+            <strong>Diffusion Models</strong>, and <strong>Generative AI</strong>.
           </p>
           <p>
-            I've had the privilege of collaborating with leading researchers from Stanford, RWTH Aachen, MILA, and MBZUAI, 
-            publishing at top-tier venues including <strong>ICCV</strong>, <strong>MICCAI</strong>, <strong>WACV</strong>, 
-            and <strong>Medical Image Analysis</strong>.
+            Currently, I'm working on <em>"AI for Point-of-Care Ultrasound: Addressing Data, Deployment, and Domain Shift Challenges"</em> 
+            under the supervision of <strong>Dr. Ilker Hacihaliloglu</strong> at UBC's UltrAi Lab.
+          </p>
+          <p>
+            I've had the privilege of publishing at top-tier venues including <span class="badge-inline">CVPR</span>, 
+            <span class="badge-inline">ICCV</span>, <span class="badge-inline">MICCAI</span>, 
+            <span class="badge-inline">WACV</span>, and leading journals like <span class="badge-inline">Medical Image Analysis</span>.
           </p>
         </div>
-        <div class="about-highlights">
-          <div class="highlight-card">
-            <h3>🎓 Education</h3>
-            <p><strong>PhD Student</strong><br>University of British Columbia<br>Computer Science</p>
+        
+        <div class="about-sidebar">
+          <div class="info-card">
+            <h3><i class="fas fa-university"></i> Education</h3>
+            <div class="edu-item">
+              <strong>PhD in Biomedical Engineering</strong>
+              <span>University of British Columbia</span>
+              <span class="year">2024 - 2028</span>
+            </div>
+            <div class="edu-item">
+              <strong>M.Sc. Communication Systems</strong>
+              <span>Iran Univ. of Science & Technology</span>
+              <span class="year">2021 - 2023</span>
+              <span class="gpa">GPA: 4.0/4.0</span>
+            </div>
+            <div class="edu-item">
+              <strong>B.Sc. Electrical Engineering</strong>
+              <span>Iran Univ. of Science & Technology</span>
+              <span class="year">2017 - 2021</span>
+            </div>
           </div>
-          <div class="highlight-card">
-            <h3>🔬 Research Interests</h3>
-            <ul>
-              <li>Implicit Neural Representations</li>
-              <li>Vision Transformers</li>
-              <li>Medical Image Analysis</li>
-              <li>Generative Models</li>
-              <li>Deep Learning</li>
+          
+          <div class="info-card">
+            <h3><i class="fas fa-flask"></i> Research Interests</h3>
+            <div class="tag-cloud">
+              <span class="tag">Computer Vision</span>
+              <span class="tag">Medical Imaging</span>
+              <span class="tag">Deep Learning</span>
+              <span class="tag">Transformers</span>
+              <span class="tag">Implicit Neural Representations</span>
+              <span class="tag">Diffusion Models</span>
+              <span class="tag">Generative AI</span>
+              <span class="tag">3D Vision</span>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <h3><i class="fas fa-trophy"></i> Recent Highlights</h3>
+            <ul class="highlight-list">
+              <li><strong>CVPR 2025</strong> - Paper Accepted</li>
+              <li><strong>ICCV 2025</strong> - Paper Accepted</li>
+              <li><strong>ICASSP 2025</strong> - Paper Accepted</li>
+              <li><strong>Reviewer</strong> - CVPR, ICCV, MICCAI</li>
             </ul>
           </div>
-          <div class="highlight-card">
-            <h3>🏆 Recent Achievement</h3>
-            <p><strong>ICCV 2025</strong><br>Broadening Participation Program Award<br>Honolulu, Hawaii</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- News Section -->
-  <section class="section section-alt" id="news">
-    <div class="container">
-      <h2 class="section-title">Latest News</h2>
-      <div class="news-grid">
-        <div class="news-item featured">
-          <span class="news-date">October 2025</span>
-          <h3>🎉 ICCV 2025 Broadening Participation Award</h3>
-          <p>Selected for the ICCV 2025 Broadening Participation Program award to present SL²A-INR at ICCV 2025 in Honolulu, Hawaii.</p>
-        </div>
-        
-        <div class="news-item">
-          <span class="news-date">September 2025</span>
-          <h3>📄 Paper Accepted at ICCV 2025</h3>
-          <p><strong>SL²A-INR</strong>: Single-Layer Learnable Activation for Implicit Neural Representation accepted to ICCV 2025.</p>
-        </div>
-        
-        <div class="news-item">
-          <span class="news-date">August 2025</span>
-          <h3>🎤 Presentation at HLI Research Day</h3>
-          <p>Successfully presented research on implicit neural representations at the Annual HLI Research Day.</p>
-        </div>
-        
-        <div class="news-item">
-          <span class="news-date">October 2023</span>
-          <h3>📝 Two Papers Accepted at WACV 2024</h3>
-          <p>INCODE and D-LKA Net accepted at IEEE/CVF Winter Conference on Applications of Computer Vision.</p>
-        </div>
-        
-        <div class="news-item">
-          <span class="news-date">October 2023</span>
-          <h3>📊 Survey Paper Published</h3>
-          <p>Vision Transformers in medical image analysis survey accepted by Medical Image Analysis Journal.</p>
-        </div>
-        
-        <div class="news-item">
-          <span class="news-date">August 2023</span>
-          <h3>🏥 Four Papers at MICCAI 2023</h3>
-          <p>LaplacianFormer (main track) and three workshop papers (DermoSegDiff, WaveFormer, DAE-Former) accepted at MICCAI.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Publications Section -->
-  <section class="section" id="publications">
+  <section class="section publications-section" id="publications">
     <div class="container">
-      <h2 class="section-title">Selected Publications</h2>
-      <p class="section-subtitle">
-        For a complete list, visit my 
-        <a href="https://scholar.google.com/citations?user=mir8D5UAAAAJ&hl=en" target="_blank">Google Scholar</a>
-      </p>
-      
-      <div class="publications-list">
+      <div class="section-header">
+        <span class="section-tag">Research Output</span>
+        <h2 class="section-title">Publications</h2>
+        <p class="section-subtitle">
+          Complete list available on 
+          <a href="https://scholar.google.com/citations?user=mir8D5UAAAAJ&hl=en" target="_blank" class="link-primary">Google Scholar <i class="fas fa-external-link-alt"></i></a>
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="pub-filters">
+        <button class="filter-btn active" data-filter="all">All Papers</button>
+        <button class="filter-btn" data-filter="2025">2025</button>
+        <button class="filter-btn" data-filter="2024">2024</button>
+        <button class="filter-btn" data-filter="2023">2023</button>
+        <button class="filter-btn" data-filter="journal">Journals</button>
+      </div>
+
+      <div class="publications-grid">
+        
+        <!-- CVPR 2025 -->
+        <article class="pub-card featured" data-year="2025" data-type="conference">
+          <div class="pub-header">
+            <span class="pub-badge cvpr">CVPR 2025</span>
+            <span class="pub-status">Accepted</span>
+          </div>
+          <h3 class="pub-title">Prompt2Perturb (P2P): Text-Guided Diffusion-Based Adversarial Attacks on Breast Ultrasound Images</h3>
+          <p class="pub-authors">
+            Yasamin Medghalchi, <strong>Moein Heidari</strong>, Clayton Allard, Leonid Sigal, Ilker Hacihaliloglu
+          </p>
+          <p class="pub-venue"><i class="fas fa-map-marker-alt"></i> IEEE/CVF Conference on Computer Vision and Pattern Recognition</p>
+          <div class="pub-links">
+            <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> arXiv</a>
+            <a href="#" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </article>
+
         <!-- ICCV 2025 -->
-        <div class="publication-item highlight">
-          <div class="pub-badge">ICCV 2025</div>
-          <h3>SL²A-INR: Single-Layer Learnable Activation for Implicit Neural Representation</h3>
+        <article class="pub-card featured" data-year="2025" data-type="conference">
+          <div class="pub-header">
+            <span class="pub-badge iccv">ICCV 2025</span>
+            <span class="pub-status">Accepted</span>
+          </div>
+          <h3 class="pub-title">SL²A-INR: Single-Layer Learnable Activation for Implicit Neural Representation</h3>
           <p class="pub-authors">
             <strong>Moein Heidari*</strong>, Reza Rezaeian*, Reza Azad, Dorit Merhof, Hamid Soltanian-Zadeh, Ilker Hacihaliloglu
           </p>
-          <p class="pub-venue">IEEE/CVF International Conference on Computer Vision (ICCV), 2025</p>
+          <p class="pub-venue"><i class="fas fa-map-marker-alt"></i> IEEE/CVF International Conference on Computer Vision</p>
           <div class="pub-links">
-            <a href="https://moeinheidari7829.github.io/SL2A-INR/" target="_blank" class="pub-link">Website</a>
-            <a href="https://arxiv.org/abs/2409.10836" target="_blank" class="pub-link">arXiv</a>
-            <a href="https://github.com/Iceage7/SL2A-INR" target="_blank" class="pub-link">Code</a>
-            <a href="https://www.youtube.com/watch?v=5dlaTW0P8YY" target="_blank" class="pub-link">Video</a>
+            <a href="https://moeinheidari7829.github.io/SL2A-INR/" class="pub-link"><i class="fas fa-globe"></i> Website</a>
+            <a href="https://arxiv.org/abs/2409.10836" class="pub-link"><i class="fas fa-file-pdf"></i> arXiv</a>
+            <a href="https://github.com/Iceage7/SL2A-INR" class="pub-link"><i class="fab fa-github"></i> Code</a>
+            <a href="https://www.youtube.com/watch?v=5dlaTW0P8YY" class="pub-link"><i class="fab fa-youtube"></i> Video</a>
           </div>
-        </div>
+        </article>
 
-        <!-- WACV 2024 -->
-        <div class="publication-item">
-          <div class="pub-badge">WACV 2024</div>
-          <h3>INCODE: Implicit Neural Conditioning with Prior Knowledge Embeddings</h3>
+        <!-- ICASSP 2025 -->
+        <article class="pub-card" data-year="2025" data-type="conference">
+          <div class="pub-header">
+            <span class="pub-badge icassp">ICASSP 2025</span>
+            <span class="pub-status">Accepted</span>
+          </div>
+          <h3 class="pub-title">Implicit Neural Representations with Fourier Kolmogorov-Arnold Networks</h3>
+          <p class="pub-authors">
+            Ali Mehrabian, Parsa Mojarad Adi, <strong>Moein Heidari</strong>, Ilker Hacihaliloglu
+          </p>
+          <p class="pub-venue"><i class="fas fa-map-marker-alt"></i> IEEE International Conference on Acoustics, Speech, and Signal Processing</p>
+          <div class="pub-links">
+            <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> arXiv</a>
+            <a href="#" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </article>
+
+        <!-- SPIE 2025 -->
+        <article class="pub-card" data-year="2025" data-type="conference">
+          <div class="pub-header">
+            <span class="pub-badge spie">SPIE 2025</span>
+            <span class="pub-status">Accepted</span>
+          </div>
+          <h3 class="pub-title">A Study on the Performance of U-Net Modifications in Retroperitoneal Tumor Segmentation</h3>
+          <p class="pub-authors">
+            <strong>Moein Heidari</strong>, Ehsan Khodapanah Aghdam, Alexander Manzella, Daniel Hsu, Rebecca Scalabrino, Wenjin Chen, David J Foran, Ilker Hacihaliloglu
+          </p>
+          <p class="pub-venue"><i class="fas fa-map-marker-alt"></i> SPIE Medical Imaging</p>
+          <div class="pub-links">
+            <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> arXiv</a>
+            <a href="#" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </article>
+
+        <!-- MICCAI 2025 Submission -->
+        <article class="pub-card" data-year="2025" data-type="conference">
+          <div class="pub-header">
+            <span class="pub-badge miccai">MICCAI 2025</span>
+            <span class="pub-status submitted">Under Review</span>
+          </div>
+          <h3 class="pub-title">Echo-E³ Net: Efficient Endo-Epi Spatio-Temporal Network for Ejection Fraction Estimation</h3>
+          <p class="pub-authors">
+            <strong>Moein Heidari</strong>, Afshin Bozorgpour, AmirHossein Zarif-Fakharnia, Dorit Merhof, Ilker Hacihaliloglu
+          </p>
+          <p class="pub-venue"><i class="fas fa-map-marker-alt"></i> Medical Image Computing and Computer Assisted Intervention</p>
+          <div class="pub-links">
+            <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> arXiv</a>
+            <a href="#" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </article>
+
+        <!-- BMVC 2024 -->
+        <article class="pub-card" data-year="2024" data-type="conference">
+          <div class="pub-header">
+            <span class="pub-badge bmvc">BMVC 2024</span>
+          </div>
+          <h3 class="pub-title">MSA² Net: Multi-scale Adaptive Attention-guided Network for Medical Image Segmentation</h3>
+          <p class="pub-authors">
+            Sina Ghorbani Kolahi, Seyed Kamal Chaharsooghi, Toktam Khatibi, Afshin Bozorgpour, Reza Azad, <strong>Moein Heidari</strong>, Ilker Hacihaliloglu, Dorit Merhof
+          </p>
+          <p class="pub-venue"><i class="fas fa-map-marker-alt"></i> British Machine Vision Conference</p>
+          <div class="pub-links">
+            <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> arXiv</a>
+            <a href="#" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </article>
+
+        <!-- MedIA - State Space Models Survey -->
+        <article class="pub-card" data-year="2024" data-type="journal">
+          <div class="pub-header">
+            <span class="pub-badge journal">Medical Image Analysis</span>
+            <span class="pub-status submitted">Under Review</span>
+          </div>
+          <h3 class="pub-title">Computation-Efficient Era: A Comprehensive Survey of State Space Models in Medical Image Analysis</h3>
+          <p class="pub-authors">
+            <strong>Moein Heidari</strong>, Sina Ghorbani Kolahi, Sanaz Karimijafarbigloo, Bobby Azad, Afshin Bozorgpour, Soheila Hatami, Reza Azad, Ali Diba, Ulas Bagci, Dorit Merhof
+          </p>
+          <p class="pub-venue"><i class="fas fa-book-medical"></i> Medical Image Analysis Journal</p>
+          <div class="pub-links">
+            <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> arXiv</a>
+            <a href="#" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </article>
+
+        <!-- arXiv - Vision Transformer Efficiency -->
+        <article class="pub-card" data-year="2024" data-type="preprint">
+          <div class="pub-header">
+            <span class="pub-badge preprint">arXiv</span>
+          </div>
+          <h3 class="pub-title">Enhancing Efficiency in Vision Transformer Networks: Design Techniques and Insights</h3>
+          <p class="pub-authors">
+            <strong>Moein Heidari</strong>, Reza Azad, Sina Ghorbani Kolahi, René Arimond, Leon Niggemeier, Alaa Sulaiman, Afshin Bozorgpour, Ehsan Khodapanah Aghdam, Amirhossein Kazerouni, Ilker Hacihaliloglu, Dorit Merhof
+          </p>
+          <div class="pub-links">
+            <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> arXiv</a>
+            <a href="#" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </article>
+
+        <!-- arXiv - Vision-Language -->
+        <article class="pub-card" data-year="2024" data-type="preprint">
+          <div class="pub-header">
+            <span class="pub-badge preprint">arXiv</span>
+          </div>
+          <h3 class="pub-title">Vision-Language Synthetic Data Enhances Echocardiography Downstream Tasks</h3>
+          <p class="pub-authors">
+            Pooria Ashrafian, Milad Yazdani, <strong>Moein Heidari</strong>, Dena Shahriari, Ilker Hacihaliloglu
+          </p>
+          <div class="pub-links">
+            <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> arXiv</a>
+            <a href="#" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </article>
+
+        <!-- WACV 2024 - INCODE -->
+        <article class="pub-card" data-year="2024" data-type="conference">
+          <div class="pub-header">
+            <span class="pub-badge wacv">WACV 2024</span>
+          </div>
+          <h3 class="pub-title">INCODE: Implicit Neural Conditioning with Prior Knowledge Embeddings</h3>
           <p class="pub-authors">
             <strong>Moein Heidari</strong>, Reza Azad, Alireza Hosseini, Dorit Merhof, Ulas Bagci
           </p>
-          <p class="pub-venue">IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), 2024</p>
+          <p class="pub-venue"><i class="fas fa-map-marker-alt"></i> IEEE/CVF Winter Conference on Applications of Computer Vision</p>
           <div class="pub-links">
-            <a href="#" target="_blank" class="pub-link">Paper</a>
-            <a href="#" target="_blank" class="pub-link">Code</a>
+            <a href="#" class="pub-link"><i class="fas fa-globe"></i> Project</a>
+            <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> Paper</a>
+            <a href="#" class="pub-link"><i class="fab fa-github"></i> Code</a>
           </div>
-        </div>
+        </article>
 
         <!-- WACV 2024 - D-LKA -->
-        <div class="publication-item">
-          <div class="pub-badge">WACV 2024</div>
-          <h3>Beyond Self-Attention: Deformable Large Kernel Attention for Medical Image Segmentation</h3>
-          <p class="pub-authors">
-            Reza Azad, Leon Niggemeier, Michael Huttemann, <strong>Moein Heidari</strong>, Ehsan Khodapanah Aghdam, Yury Velichko, Ulas Bagci, Dorit Merhof
-          </p>
-          <p class="pub-venue">IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), 2024</p>
-          <div class="pub-links">
-            <a href="#" target="_blank" class="pub-link">Paper</a>
-            <a href="#" target="_blank" class="pub-link">Code</a>
+        <article class="pub-card" data-year="2024" data-type="conference">
+          <div class="pub-header">
+            <span class="pub-badge wacv">WACV 2024</span>
           </div>
-        </div>
+          <h3 class="pub-title">Beyond Self-Attention: Deformable Large Kernel Attention for Medical Image Segmentation</h3>
+          <p class="pub-authors">
+            Reza Azad, Leon Niggemeier, Michael Hüttemann, <strong>Moein Heidari</strong>, Ehsan Khodapanah Aghdam, Yury Velichko, Ulas Bagci, Dorit Merhof
+          </p>
+          <p class="pub-venue"><i class="fas fa-map-marker-alt"></i> IEEE/CVF Winter Conference on Applications of Computer Vision</p>
+          <div class="pub-links">
+            <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> Paper</a>
+            <a href="#" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </article>
 
-        <!-- MICCAI 2023 -->
-        <div class="publication-item">
-          <div class="pub-badge">MICCAI 2023</div>
-          <h3>Laplacian-Former: Overcoming the Limitations of Vision Transformers in Local Texture Detection</h3>
+        <!-- MICCAI 2023 - LaplacianFormer -->
+        <article class="pub-card" data-year="2023" data-type="conference">
+          <div class="pub-header">
+            <span class="pub-badge miccai">MICCAI 2023</span>
+          </div>
+          <h3 class="pub-title">Laplacian-Former: Overcoming the Limitations of Vision Transformers in Local Texture Detection</h3>
           <p class="pub-authors">
             Reza Azad, <strong>Moein Heidari</strong>, Babak Azad, Ehsan Khodapanah Aghdam, Yury Velichko, Ulas Bagci, Dorit Merhof
           </p>
-          <p class="pub-venue">Medical Image Computing and Computer Assisted Intervention (MICCAI), 2023</p>
+          <p class="pub-venue"><i class="fas fa-map-marker-alt"></i> Medical Image Computing and Computer Assisted Intervention</p>
           <div class="pub-links">
-            <a href="#" target="_blank" class="pub-link">Paper</a>
-            <a href="#" target="_blank" class="pub-link">Code</a>
+            <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> Paper</a>
+            <a href="#" class="pub-link"><i class="fab fa-github"></i> Code</a>
           </div>
-        </div>
+        </article>
 
-        <!-- MedIA - Diffusion Models -->
-        <div class="publication-item">
-          <div class="pub-badge">MedIA</div>
-          <h3>Diffusion Models in Medical Imaging: A Comprehensive Survey</h3>
-          <p class="pub-authors">
-            <strong>Moein Heidari</strong>, Ehsan Khodapanah Aghdam, Moein Heidari, Reza Azad, Mohsen Fayyaz, Ilker Hacihaliloglu, Dorit Merhof
-          </p>
-          <p class="pub-venue">Medical Image Analysis (MedIA), 2023</p>
-          <div class="pub-links">
-            <a href="#" target="_blank" class="pub-link">Paper</a>
-            <a href="#" target="_blank" class="pub-link">Code</a>
+        <!-- BMVC 2023 - SA²-Net -->
+        <article class="pub-card" data-year="2023" data-type="conference">
+          <div class="pub-header">
+            <span class="pub-badge bmvc">BMVC 2023 (Oral)</span>
           </div>
-        </div>
-
-        <!-- MedIA - Vision Transformers -->
-        <div class="publication-item">
-          <div class="pub-badge">MedIA</div>
-          <h3>Advances in Medical Image Analysis with Vision Transformers: A Comprehensive Review</h3>
+          <h3 class="pub-title">SA²-Net: Scale-aware Attention Network for Cell Segmentation and Beyond</h3>
           <p class="pub-authors">
-            Reza Azad, <strong>Moein Heidari</strong>, Moein Heidari, Ehsan Khodapanah Aghdam, Amirali Molaei, Yiwei Jia, Abin Jose, Rijo Roy, Dorit Merhof
+            Mustansar Fiaz, <strong>Moein Heidari</strong>, Rao Muhammad Anwer, Hisham Cholakkal
           </p>
-          <p class="pub-venue">Medical Image Analysis (MedIA), 2023</p>
+          <p class="pub-venue"><i class="fas fa-map-marker-alt"></i> British Machine Vision Conference</p>
           <div class="pub-links">
-            <a href="#" target="_blank" class="pub-link">Paper</a>
-            <a href="#" target="_blank" class="pub-link">Code</a>
+            <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> arXiv</a>
+            <a href="#" class="pub-link"><i class="fab fa-github"></i> Code</a>
           </div>
-        </div>
+        </article>
 
         <!-- WACV 2023 - HiFormer -->
-        <div class="publication-item">
-          <div class="pub-badge">WACV 2023</div>
-          <h3>HiFormer: Hierarchical Multi-scale Representations Using Transformers for Medical Image Segmentation</h3>
+        <article class="pub-card" data-year="2023" data-type="conference">
+          <div class="pub-header">
+            <span class="pub-badge wacv">WACV 2023</span>
+          </div>
+          <h3 class="pub-title">HiFormer: Hierarchical Multi-scale Representations Using Transformers for Medical Image Segmentation</h3>
           <p class="pub-authors">
             Moein Heidari*, <strong>Moein Heidari*</strong>, Milad Soltany*, Reza Azad, Ehsan Khodapanah Aghdam, Julien Cohen-Adad, Dorit Merhof
           </p>
-          <p class="pub-venue">IEEE/CVF Winter Conference on Applications of Computer Vision (WACV), 2023</p>
+          <p class="pub-venue"><i class="fas fa-map-marker-alt"></i> IEEE/CVF Winter Conference on Applications of Computer Vision</p>
           <div class="pub-links">
-            <a href="#" target="_blank" class="pub-link">Paper</a>
-            <a href="#" target="_blank" class="pub-link">Code</a>
+            <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> arXiv</a>
+            <a href="#" class="pub-link"><i class="fab fa-github"></i> Code</a>
           </div>
-        </div>
+        </article>
 
-        <!-- MIDL 2023 -->
-        <div class="publication-item">
-          <div class="pub-badge oral">MIDL 2023 (Oral)</div>
-          <h3>MS-Former: Multi-Scale Self-Guided Transformer for Medical Image Segmentation</h3>
-          <p class="pub-authors">
-            Sanaz Karimijafarbigloo, Reza Azad, <strong>Moein Heidari</strong>, Dorit Merhof
-          </p>
-          <p class="pub-venue">Medical Imaging with Deep Learning (MIDL), 2023</p>
-          <div class="pub-links">
-            <a href="#" target="_blank" class="pub-link">Paper</a>
-            <a href="#" target="_blank" class="pub-link">Code</a>
+        <!-- MedIA - Diffusion Models Survey -->
+        <article class="pub-card" data-year="2023" data-type="journal">
+          <div class="pub-header">
+            <span class="pub-badge journal">Medical Image Analysis</span>
           </div>
-        </div>
+          <h3 class="pub-title">Diffusion Models for Medical Image Analysis: A Comprehensive Survey</h3>
+          <p class="pub-authors">
+            Amirhossein Kazerouni, Ehsan Khodapanah Aghdam, <strong>Moein Heidari</strong>, Reza Azad, Mohsen Fayyaz, Ilker Hacihaliloglu, Dorit Merhof
+          </p>
+          <p class="pub-venue"><i class="fas fa-book-medical"></i> Medical Image Analysis</p>
+          <div class="pub-links">
+            <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> Paper</a>
+            <a href="#" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </article>
+
+        <!-- MedIA - Vision Transformers -->
+        <article class="pub-card" data-year="2023" data-type="journal">
+          <div class="pub-header">
+            <span class="pub-badge journal">Medical Image Analysis</span>
+          </div>
+          <h3 class="pub-title">Advances in Medical Image Analysis with Vision Transformers: A Comprehensive Review</h3>
+          <p class="pub-authors">
+            Reza Azad, <strong>Moein Heidari</strong>, Moein Shariatnia, Ehsan Khodapanah Aghdam, Amirali Molaei, Yiwei Jia, Abin Jose, Rijo Roy, Dorit Merhof
+          </p>
+          <p class="pub-venue"><i class="fas fa-book-medical"></i> Medical Image Analysis</p>
+          <div class="pub-links">
+            <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> Paper</a>
+            <a href="#" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </article>
+
+        <!-- MICCAI 2023 Workshops -->
+        <article class="pub-card" data-year="2023" data-type="conference">
+          <div class="pub-header">
+            <span class="pub-badge workshop">MICCAI 2023</span>
+          </div>
+          <h3 class="pub-title">DermoSegDiff: A Boundary-aware Segmentation Diffusion Model for Skin Lesion Delineation</h3>
+          <p class="pub-authors">
+            Afshin Bozorgpour*, Yousef Sadegheih*, <strong>Moein Heidari*</strong>, Reza Azad, Dorit Merhof
+          </p>
+          <p class="pub-venue"><i class="fas fa-map-marker-alt"></i> MICCAI PRIME Workshop</p>
+          <div class="pub-links">
+            <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> Paper</a>
+            <a href="#" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </article>
+
+        <!-- MICCAI 2022 - Contextual Attention -->
+        <article class="pub-card" data-year="2022" data-type="conference">
+          <div class="pub-header">
+            <span class="pub-badge miccai">MICCAI 2022</span>
+          </div>
+          <h3 class="pub-title">Contextual Attention Network: Transformer Meets U-Net</h3>
+          <p class="pub-authors">
+            Reza Azad, <strong>Moein Heidari</strong>, Yuli Wu, Dorit Merhof
+          </p>
+          <p class="pub-venue"><i class="fas fa-map-marker-alt"></i> Medical Image Computing and Computer Assisted Intervention</p>
+          <div class="pub-links">
+            <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> arXiv</a>
+            <a href="#" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </article>
+
+        <!-- MICCAI 2022 - IVD Labeling -->
+        <article class="pub-card" data-year="2022" data-type="conference">
+          <div class="pub-header">
+            <span class="pub-badge miccai">MICCAI 2022</span>
+          </div>
+          <h3 class="pub-title">Intervertebral Disc Labeling With Learning Shape Information, A Look Once Approach</h3>
+          <p class="pub-authors">
+            Reza Azad, <strong>Moein Heidari</strong>, Julien Cohen-Adad, Ehsan Adeli, Dorit Merhof
+          </p>
+          <p class="pub-venue"><i class="fas fa-map-marker-alt"></i> Medical Image Computing and Computer Assisted Intervention</p>
+          <div class="pub-links">
+            <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> arXiv</a>
+            <a href="#" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </article>
+
+        <!-- IEEE Access - TransNorm -->
+        <article class="pub-card" data-year="2022" data-type="journal">
+          <div class="pub-header">
+            <span class="pub-badge journal">IEEE Access</span>
+          </div>
+          <h3 class="pub-title">TransNorm: Transformer Provides a Strong Spatial Normalization Mechanism for a Deep Segmentation Model</h3>
+          <p class="pub-authors">
+            Reza Azad, Mohammad T. AL-Antary, <strong>Moein Heidari</strong>, Dorit Merhof
+          </p>
+          <p class="pub-venue"><i class="fas fa-book"></i> IEEE Access</p>
+          <div class="pub-links">
+            <a href="#" class="pub-link"><i class="fas fa-file-pdf"></i> arXiv</a>
+            <a href="#" class="pub-link"><i class="fab fa-github"></i> Code</a>
+          </div>
+        </article>
+
       </div>
-      
-      <div class="more-publications">
-        <a href="https://scholar.google.com/citations?user=mir8D5UAAAAJ&hl=en" target="_blank" class="btn btn-outline-large">
-          View All Publications on Google Scholar →
+
+      <div class="view-more">
+        <a href="https://scholar.google.com/citations?user=mir8D5UAAAAJ&hl=en" target="_blank" class="btn btn-large">
+          View All Publications <i class="fas fa-arrow-right"></i>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- Experience Section -->
-  <section class="section section-alt" id="experience">
+  <!-- News Section -->
+  <section class="section news-section" id="news">
     <div class="container">
-      <h2 class="section-title">Experience & Education</h2>
+      <div class="section-header">
+        <span class="section-tag">Latest Updates</span>
+        <h2 class="section-title">News & Announcements</h2>
+      </div>
       
       <div class="timeline">
         <div class="timeline-item">
-          <div class="timeline-marker"></div>
+          <div class="timeline-date">Dec 2024</div>
           <div class="timeline-content">
-            <span class="timeline-date">Mar 2022 - Present</span>
-            <h3>PhD Student & Research Assistant</h3>
-            <p class="timeline-org">University of British Columbia, Canada</p>
-            <p>Working on implicit neural representations, medical image analysis, and deep learning under Dr. Ilker Hacihaliloglu.</p>
+            <h3><i class="fas fa-star"></i> Three Papers Accepted for 2025</h3>
+            <p>Excited to announce three papers accepted at <strong>CVPR 2025</strong>, <strong>ICCV 2025</strong>, and <strong>ICASSP 2025</strong>!</p>
           </div>
         </div>
-        
+
         <div class="timeline-item">
-          <div class="timeline-marker"></div>
+          <div class="timeline-date">Oct 2024</div>
           <div class="timeline-content">
-            <span class="timeline-date">2023 - 2024</span>
-            <h3>Research Collaborator</h3>
-            <p class="timeline-org">Mohamed bin Zayed University of AI (MBZUAI), UAE</p>
-            <p>Scale-aware Attention Network for Microscopic Image Segmentation (Published at BMVC 2023).</p>
+            <h3><i class="fas fa-chalkboard-teacher"></i> Teaching at UBC</h3>
+            <p>Started teaching assistant position for CPSC 330 (Applied Machine Learning) and CPSC 340 (Machine Learning and Data Mining).</p>
           </div>
         </div>
-        
+
         <div class="timeline-item">
-          <div class="timeline-marker"></div>
+          <div class="timeline-date">Oct 2023</div>
           <div class="timeline-content">
-            <span class="timeline-date">2021 - Present</span>
-            <h3>Remote Research Assistant</h3>
-            <p class="timeline-org">RWTH Aachen University, Germany</p>
-            <p>Deep learning methods for medical image analysis with Prof. Dorit Merhof (Publications: MICCAI, WACV, IEEE Access).</p>
+            <h3><i class="fas fa-file-alt"></i> Survey Paper Accepted</h3>
+            <p>Our comprehensive survey on <strong>Vision Transformers in Medical Image Analysis</strong> accepted by Medical Image Analysis journal.</p>
           </div>
         </div>
-        
+
         <div class="timeline-item">
-          <div class="timeline-marker"></div>
+          <div class="timeline-date">Aug 2023</div>
           <div class="timeline-content">
-            <span class="timeline-date">Jul 2020 - Jul 2022</span>
-            <h3>Co-founder</h3>
-            <p class="timeline-org">AIR Center, Tehran, Iran</p>
-            <p>AI Research center focused on advancing deep learning applications.</p>
+            <h3><i class="fas fa-trophy"></i> Four Papers at MICCAI 2023</h3>
+            <p><strong>LaplacianFormer</strong> accepted in main conference + three workshop papers (DermoSegDiff, WaveFormer, DAE-Former).</p>
           </div>
         </div>
-        
+
         <div class="timeline-item">
-          <div class="timeline-marker"></div>
+          <div class="timeline-date">Jan 2024</div>
           <div class="timeline-content">
-            <span class="timeline-date">Sep 2017 - Feb 2022</span>
-            <h3>B.Sc. in Electrical Engineering</h3>
-            <p class="timeline-org">Iran University of Science and Technology, Iran</p>
-            <p>Thesis: Designing, simulating, and building a self-driving car.</p>
+            <h3><i class="fas fa-graduation-cap"></i> Started PhD at UBC</h3>
+            <p>Joined the Biomedical Engineering PhD program at University of British Columbia under Dr. Ilker Hacihaliloglu.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">Aug 2022</div>
+          <div class="timeline-content">
+            <h3><i class="fas fa-book"></i> Diffusion Models Survey Published</h3>
+            <p>Comprehensive survey on <strong>Diffusion Models in Medical Imaging</strong> accepted by Medical Image Analysis journal.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Collaborators Section -->
-  <section class="section" id="collaborators">
+  <!-- Experience Section -->
+  <section class="section experience-section" id="experience">
     <div class="container">
-      <h2 class="section-title">Research Collaborations</h2>
-      <div class="collab-grid">
-        <div class="collab-card">
-          <h3>Dr. Ilker Hacihaliloglu</h3>
-          <p>University of British Columbia, Canada</p>
-          <p class="collab-role">PhD Supervisor</p>
+      <div class="section-header">
+        <span class="section-tag">Career Journey</span>
+        <h2 class="section-title">Experience & Service</h2>
+      </div>
+      
+      <div class="experience-tabs">
+        <button class="tab-btn active" data-tab="research">Research</button>
+        <button class="tab-btn" data-tab="teaching">Teaching</button>
+        <button class="tab-btn" data-tab="service">Service</button>
+        <button class="tab-btn" data-tab="work">Industry</button>
+      </div>
+
+      <div class="tab-content active" data-content="research">
+        <div class="exp-grid">
+          <div class="exp-card">
+            <div class="exp-icon"><i class="fas fa-university"></i></div>
+            <h3>University of British Columbia</h3>
+            <p class="exp-role">PhD Student & Research Assistant</p>
+            <p class="exp-period">Jan 2024 - Present</p>
+            <p>Research on AI for Point-of-Care Ultrasound under Dr. Ilker Hacihaliloglu at UltrAi Lab.</p>
+          </div>
+
+          <div class="exp-card">
+            <div class="exp-icon"><i class="fas fa-building"></i></div>
+            <h3>RWTH Aachen University</h3>
+            <p class="exp-role">Research Assistant</p>
+            <p class="exp-period">Oct 2021 - Dec 2023</p>
+            <p>Worked on Transformer models and medical image segmentation with Prof. Dorit Merhof. 4 conference + 3 journal publications.</p>
+          </div>
+
+          <div class="exp-card">
+            <div class="exp-icon"><i class="fas fa-brain"></i></div>
+            <h3>Mohamed bin Zayed Univ. of AI (MBZUAI)</h3>
+            <p class="exp-role">Research Assistant</p>
+            <p class="exp-period">Jan 2023 - May 2023</p>
+            <p>Attention mechanisms for microscopic medical image segmentation with Dr. Hisham Cholakkal.</p>
+          </div>
+
+          <div class="exp-card">
+            <div class="exp-icon"><i class="fas fa-flask"></i></div>
+            <h3>DGSculptor, Montreal</h3>
+            <p class="exp-role">ML & Computer Vision Researcher</p>
+            <p class="exp-period">Dec 2021 - Dec 2023</p>
+            <p>Generative Flow Networks and statistical perspective of generative models.</p>
+          </div>
         </div>
-        <div class="collab-card">
-          <h3>Dr. Dorit Merhof</h3>
-          <p>University of Regensburg, Germany</p>
-          <p class="collab-role">Medical Image Analysis</p>
+      </div>
+
+      <div class="tab-content" data-content="teaching">
+        <div class="exp-grid">
+          <div class="exp-card">
+            <div class="exp-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+            <h3>CPSC 330 - Applied Machine Learning</h3>
+            <p class="exp-role">Teaching Assistant</p>
+            <p class="exp-period">Fall 2024</p>
+            <p>University of British Columbia</p>
+          </div>
+
+          <div class="exp-card">
+            <div class="exp-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+            <h3>CPSC 340 - Machine Learning and Data Mining</h3>
+            <p class="exp-role">Teaching Assistant</p>
+            <p class="exp-period">Winter 2025</p>
+            <p>University of British Columbia</p>
+          </div>
+
+          <div class="exp-card">
+            <div class="exp-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+            <h3>Signals and Systems Analysis</h3>
+            <p class="exp-role">Teaching Assistant</p>
+            <p class="exp-period">Spring 2021, 2022, 2023</p>
+            <p>Iran University of Science and Technology</p>
+          </div>
+
+          <div class="exp-card">
+            <div class="exp-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+            <h3>Fundamentals of Deep Learning</h3>
+            <p class="exp-role">Teaching Assistant</p>
+            <p class="exp-period">Spring 2022</p>
+            <p>Iran University of Science and Technology</p>
+          </div>
         </div>
-        <div class="collab-card">
-          <h3>Dr. Ehsan Adeli</h3>
-          <p>Stanford University, USA</p>
-          <p class="collab-role">Computer Vision</p>
+      </div>
+
+      <div class="tab-content" data-content="service">
+        <div class="service-grid">
+          <div class="service-card">
+            <h3><i class="fas fa-pen-fancy"></i> Conference Reviewer</h3>
+            <ul>
+              <li><strong>CVPR 2025</strong> - Computer Vision and Pattern Recognition</li>
+              <li><strong>ICCV 2025</strong> - International Conference on Computer Vision</li>
+              <li><strong>MICCAI 2024, 2025</strong> - Medical Image Computing</li>
+              <li><strong>ICLR 2024</strong> - International Conference on Learning Representations</li>
+              <li><strong>BMVC 2025</strong> - British Machine Vision Conference</li>
+            </ul>
+          </div>
+
+          <div class="service-card">
+            <h3><i class="fas fa-journal-whills"></i> Journal Reviewer</h3>
+            <ul>
+              <li><strong>IEEE TMI</strong> - Transactions on Medical Imaging</li>
+              <li><strong>IEEE JBHI</strong> - Journal of Biomedical and Health Informatics</li>
+              <li><strong>IEEE Access</strong> - Open Access Journal</li>
+              <li><strong>IEEE Systems Journal</strong> - Multidisciplinary Systems</li>
+              <li><strong>IEEE Signal Processing Letters</strong> - Signal Processing Research</li>
+            </ul>
+          </div>
         </div>
-        <div class="collab-card">
-          <h3>Dr. Julien Cohen-Adad</h3>
-          <p>MILA, Canada</p>
-          <p class="collab-role">MRI Research</p>
+      </div>
+
+      <div class="tab-content" data-content="work">
+        <div class="exp-grid">
+          <div class="exp-card">
+            <div class="exp-icon"><i class="fas fa-briefcase"></i></div>
+            <h3>FaraAI</h3>
+            <p class="exp-role">AI Engineer</p>
+            <p class="exp-period">May 2022 - Dec 2022</p>
+            <p>Designed computer vision pipelines for automatic detection and dispatching system for roadside emergencies (fires, traffic incidents).</p>
+          </div>
+
+          <div class="exp-card">
+            <div class="exp-icon"><i class="fas fa-lightbulb"></i></div>
+            <h3>AIR Center</h3>
+            <p class="exp-role">Co-founder</p>
+            <p class="exp-period">Jul 2020 - Jul 2022</p>
+            <p>AI Research center focused on advancing deep learning applications in Tehran, Iran.</p>
+          </div>
         </div>
-        <div class="collab-card">
-          <h3>Dr. Hisham Cholakkal</h3>
-          <p>MBZUAI, UAE</p>
-          <p class="collab-role">Computer Vision</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section skills-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Technical Expertise</span>
+        <h2 class="section-title">Skills & Tools</h2>
+      </div>
+      
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3><i class="fas fa-code"></i> Programming</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">CUDA</span>
+            <span class="skill-tag">C/C++</span>
+            <span class="skill-tag">MATLAB</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">Julia</span>
+          </div>
         </div>
-        <div class="collab-card">
-          <h3>Dr. Ulas Bagci</h3>
-          <p>Northwestern University, USA</p>
-          <p class="collab-role">Medical Imaging AI</p>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-brain"></i> Frameworks</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">Keras</span>
+            <span class="skill-tag">OpenCV</span>
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">Pandas</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-tools"></i> Tools</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">LaTeX</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Docker</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3><i class="fas fa-lightbulb"></i> Soft Skills</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Leadership</span>
+            <span class="skill-tag">Public Speaking</span>
+            <span class="skill-tag">Writing</span>
+            <span class="skill-tag">Time Management</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section class="section section-alt" id="contact">
+  <section class="section contact-section" id="contact">
     <div class="container">
-      <h2 class="section-title">Get in Touch</h2>
-      <p class="contact-intro">
-        I'm always happy to discuss research collaborations, open positions, or any topics related to computer vision 
-        and deep learning. Feel free to reach out!
-      </p>
+      <div class="section-header">
+        <span class="section-tag">Let's Connect</span>
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-subtitle">
+          I'm always open to discussing research collaborations, open positions, or interesting projects!
+        </p>
+      </div>
       
       <div class="contact-grid">
         <div class="contact-card">
-          <h3>📧 Email</h3>
+          <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+          <h3>Email</h3>
           <p><a href="mailto:moein.heidari@ubc.ca">moein.heidari@ubc.ca</a></p>
           <p><a href="mailto:moeinheidari7829@gmail.com">moeinheidari7829@gmail.com</a></p>
         </div>
-        
+
         <div class="contact-card">
-          <h3>🏛️ Institution</h3>
+          <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <h3>Location</h3>
           <p>University of British Columbia</p>
           <p>Department of Radiology</p>
           <p>Vancouver, BC, Canada</p>
         </div>
-        
+
         <div class="contact-card">
-          <h3>🔗 Links</h3>
-          <p><a href="https://scholar.google.com/citations?user=mir8D5UAAAAJ&hl=en" target="_blank">Google Scholar</a></p>
-          <p><a href="https://github.com/moeinheidari7829" target="_blank">GitHub</a></p>
-          <p><a href="https://ultrai.med.ubc.ca/" target="_blank">UltrAi Lab</a></p>
+          <div class="contact-icon"><i class="fas fa-link"></i></div>
+          <h3>Connect</h3>
+          <div class="social-links">
+            <a href="https://scholar.google.com/citations?user=mir8D5UAAAAJ&hl=en" target="_blank" title="Google Scholar">
+              <i class="fas fa-graduation-cap"></i>
+            </a>
+            <a href="https://github.com/moeinheidari7829" target="_blank" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/moein-heidari/" target="_blank" title="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://ultrai.med.ubc.ca/" target="_blank" title="UltrAi Lab">
+              <i class="fas fa-flask"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -422,70 +837,23 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p>© 2025 Moein Heidari. All rights reserved.</p>
+      <p>&copy; 2025 Moein Heidari. All rights reserved.</p>
       <p class="footer-links">
-        <a href="https://scholar.google.com/citations?user=mir8D5UAAAAJ&hl=en" target="_blank">Google Scholar</a>
+        <a href="https://scholar.google.com/citations?user=mir8D5UAAAAJ&hl=en" target="_blank">Scholar</a>
         <span>•</span>
         <a href="https://github.com/moeinheidari7829" target="_blank">GitHub</a>
         <span>•</span>
         <a href="mailto:moein.heidari@ubc.ca">Email</a>
       </p>
-      <a href="#home" class="back-to-top">↑ Back to Top</a>
     </div>
   </footer>
 
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
   <!-- JavaScript -->
-  <script>
-    // Mobile navigation toggle
-    const navToggle = document.querySelector('.nav-toggle');
-    const navMenu = document.querySelector('.nav-menu');
-
-    navToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('active');
-      navToggle.classList.toggle('active');
-    });
-
-    // Close menu when clicking on a link
-    document.querySelectorAll('.nav-menu a').forEach(link => {
-      link.addEventListener('click', () => {
-        navMenu.classList.remove('active');
-        navToggle.classList.remove('active');
-      });
-    });
-
-    // Smooth scroll
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      });
-    });
-
-    // Intersection Observer for fade-in animations
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.style.opacity = '1';
-          entry.target.style.transform = 'translateY(0)';
-        }
-      });
-    }, observerOptions);
-
-    document.querySelectorAll('.publication-item, .news-item, .timeline-item').forEach(el => {
-      el.style.opacity = '0';
-      el.style.transform = 'translateY(20px)';
-      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-      observer.observe(el);
-    });
-  </script>
+  <script src="./script.js"></script>
 </body>
 </html>
-
