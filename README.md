@@ -51,17 +51,6 @@ Motivated computer engineer with **5+ years of experience** in research, develop
 
 ---
 
-## 📚 PUBLICATIONS
-
-**20+ Publications** in top-tier venues including:
-- **CVPR 2025**: Prompt2Perturb (P2P)
-- **ICCV 2025**: SL²A-INR (Featured)
-- **ICASSP 2025**: Fourier KAN
-- **MICCAI**: Multiple papers (2022, 2025)
-- **WACV**: HiFormer (2023)
-- **BMVC**: SA²-Net (Oral, 2023), MSA² Net (2024)
-- **Medical Image Analysis**: Survey papers on Vision Transformers and Diffusion Models
-
 📖 **[Google Scholar](https://scholar.google.com/citations?user=mir8D5UAAAAJ&hl=en)**
 
 ---
@@ -84,14 +73,6 @@ Motivated computer engineer with **5+ years of experience** in research, develop
 - 🐙 **GitHub**: [@moeinheidari7829](https://github.com/moeinheidari7829)
 - 💼 **LinkedIn**: [Moein Heidari](https://www.linkedin.com/in/moein-heidari/)
 - 📚 **Google Scholar**: [Moein Heidari](https://scholar.google.com/citations?user=mir8D5UAAAAJ&hl=en)
-
----
-
-## 🚀 CURRENT PROJECTS
-
-- **Agentic Framework for Echocardiography**: Developing multimodal AI agents for cardiac imaging
-- **Implicit Neural Representations**: SL²A-INR for efficient neural representations
-- **Medical Image Analysis**: Advanced deep learning methods for healthcare applications
 
 ---
 
